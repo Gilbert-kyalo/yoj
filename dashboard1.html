@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .menu-icon {
+            display: block;
+            width: 20px;
+            height: 15px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        .menu-icon div {
+            width: 100%;
+            height: 3px;
+            background-color: black;
+            margin: 3px;
+            transition: all 0.3s ease;
+            text-align: right;
+        }
+        nav {
+            display: none;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 700px;
+            padding-top: 50px;
+            text-align: left;
+            border: 3px solid black;
+            background-color: blue;
+        }
+        nav a {
+            display: block;
+            padding: 15px;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            border-bottom: 1px solid #444;
+        }
+        nav a:hover {
+            background-color: green;
+        }
+        .menu-open nav {
+            display: block;
+        }
+        .content {
+            margin-right: 0;
+            transition: margin-right 0.3s;
+            padding: 20px;
+        }
+        table{
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav>
+        <img style="border: 1px solid yellow; border-radius: 3px" src="C:\Users\user\OneDrive\Pictures\Screenshots\Screenshot 2025-03-03 212843.png" width="50" >
+        <a href="#">Home</a>
+        <a href="#">Dashboard</a>
+        <a href="#">My courses</a>
+        <a href="#">Search Course</a>
+    </nav>
+    <div class="content">
+        <img style="border: 1px solid red; border-radius: 4px;" src="C:\Users\user\OneDrive\Pictures\Screenshots\Screenshot 2025-03-03 212843.png" width="500">
+        <table border="1.0">
+            <tr>
+                <th>Name</th>
+                <th>Reg No.</th>
+                <th>Course</th>
+            </tr>
+            <br>
+            <tr>
+                <td>Gilbert Kyalo Muswii</td>
+                <td>P100/4115G/23</td>
+                <td>Barchelor Of Science IT</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+    </script>
+</body>
+</html>

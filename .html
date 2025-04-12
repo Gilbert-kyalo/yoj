@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="gilbert-kyalo">
+    <title>
+        Dashboard Menu
+    </title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+        }
+        .menu-open nav{
+            display: block;
+        }
+        .content{
+            margin-left: 0;
+            padding: 15px;
+            transition: margin-right 0.3s;
+        }
+        nav a:hover{
+            background-color: blue;
+        }
+        nav a{
+            padding: 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 18px;
+            border-bottom: 1px solid black;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 700px;
+            height: 100%;
+            display: none;
+            padding-top: 50px;
+            background-color: black;
+        }
+        .menu-icon div{
+            width: 100%;
+            height: 3px;
+            margin: 3px 0;
+            transition: all 0.3s ease;
+            background-color: black;
+        }
+        .menu-icon{
+            display: block;
+            width: 30px;
+            height: 25px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav>
+        <a href="#">Settings</a>
+        <a href="#">Home</a>
+        <a href="#">Log Out</a>
+    </nav>
+    <div class="content">
+        <p>Welcome home</p>
+    </div>
+    <script>
+         // Function to toggle the menu visibility
+        function toggleMenu(){
+            document.classList.body.toggle('menu-open');
+        }
+    </script>
+</body>
+</html>

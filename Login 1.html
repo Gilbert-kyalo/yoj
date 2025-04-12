@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="gilbert-kyalo">
+    <title>
+        Log in Page
+    </title>
+    <style>
+        html{
+            background-color: black;
+            color: white;
+        }
+        .box{
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 500px;
+            margin: 15px auto;
+            padding: 20px;
+            border: 3px solid white;
+            background-color: green;
+            border-radius: 4px;
+        }
+        button{
+            background-color: white;
+        }
+        .form-group{
+            margin-bottom: 5px;
+        }
+        .form-group input[type="submit"]:hover{
+            background-color: green;
+        }
+        .form-group input{
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid blue;
+            border-radius: 3px;
+        }
+        .form-group input[type="submit"]{
+            background-color: green;
+            color: none;
+            cursor: pointer;
+            border: none;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <div class="box">
+        <form group="submit" method="login">
+            <h2>
+                <img src="C:\Users\user\OneDrive\Pictures\Screenshots\Screenshot 2025-03-08 210928.png" width="250" >
+            </h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter Your Reg No." required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" >Log In</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
